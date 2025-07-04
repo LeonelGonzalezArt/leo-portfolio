@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leonel Gonzalez | Visual Artist</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+    .video-background iframe {
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    section {
+      margin: 3rem 0;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    a {
+      color: #79ffe1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-background">
+    <iframe
+      src="https://www.youtube.com/embed/wOO4GqllCRA?autoplay=1&mute=1&loop=1&playlist=wOO4GqllCRA"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="content">
+    <section>
+      <h1>Leonel Gonzalez</h1>
+      <p style="text-align: center;">Visual Artist | Artista Plástico</p>
+    </section>
+
+    <section>
+      <h2>Biography</h2>
+      <p>Leonel Gonzalez is a Venezuelan-born visual artist known for his dynamic exploration of form, texture, and cultural identity. His work spans painting, mixed media, and installation, often weaving together personal history with collective memory.</p>
+    </section>
+
+    <section>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="gallery1.jpg" alt="Artwork 1" />
+        <img src="gallery2.jpg" alt="Artwork 2" />
+        <img src="gallery3.jpg" alt="Artwork 3" />
+        <img src="gallery4.jpg" alt="Artwork 4" />
+        <img src="gallery5.jpg" alt="Artwork 5" />
+        <img src="gallery6.jpg" alt="Artwork 6" />
+        <img src="gallery7.jpg" alt="Artwork 7" />
+        <img src="Gallery8.jpg" alt="Artwork 8" />
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p style="text-align:center;">Follow on Instagram: <a href="https://www.instagram.com/leonelgonzalez_art/" target="_blank">@leonelgonzalez_art</a></p>
+    </section>
+
+    <footer>
+      <p>© 2025 Leonel Gonzalez. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
