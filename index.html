@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonel Gonzalez - Artista Plástico</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .bio-image {
+      max-width: 40%;
+      border-radius: 1rem;
+    }
+    .bio-text {
+      max-width: 50%;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="video-background">
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="content">
+    <img src="leo.jpg" alt="Leonel Gonzalez" class="bio-image">
+    <div class="bio-text">
+      <h1>Leonel Gonzalez</h1>
+      <p>Artista Plástico Venezolano especializado en realismo hiperrealista con énfasis en caballos y paisajes.</p>
+    </div>
+  </div>
+</body>
+</html>
