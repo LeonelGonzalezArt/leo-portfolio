@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonel Gonzalez Visual Artist</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html { height: 100%; font-family: Arial, sans-serif; color: #fff; background: #000; overflow-x: hidden; }
+    nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.7); z-index: 10; display: flex; justify-content: center; padding: 10px 0; }
+    nav a { color: #fff; margin: 0 20px; text-decoration: none; font-size: 1em; transition: color 0.3s; }
+    nav a:hover { color: #f4d35e; }
+    header { position: relative; width: 100%; height: 100vh; overflow: hidden; }
+    .video-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; overflow: hidden; }
+    .video-container iframe { width: 100%; height: 100%; pointer-events: none; }
+    header .overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 60px; }
+    header h1 { font-size: 3.5em; font-weight: bold; letter-spacing: 2px; padding: 20px; }
+    .bio-section, .gallery, .contact { padding: 60px 30px; }
+    .bio-section { display: flex; flex-wrap: wrap; background-color: #111; align-items: center; justify-content: center; }
+    .bio-img { flex: 1; max-width: 400px; margin: 20px; }
+    .bio-img img { width: 100%; height: auto; border-radius: 8px; }
+    .bio-text { flex: 2; max-width: 700px; color: #eee; margin: 20px; font-size: 1.1em; line-height: 1.6; }
+    .gallery { background: #222; }
+    .gallery h2, .contact h2 { color: #fff; font-size: 2.5em; text-align: center; margin-bottom: 40px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .gallery-grid img { width: 100%; height: auto; border-radius: 5px; }
+    .contact { background-color: #111; color: #eee; text-align: center; }
+    .contact form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+    .contact input, .contact textarea { padding: 10px; border: none; border-radius: 5px; font-size: 1em; }
+    .contact button { padding: 10px; font-size: 1em; border: none; border-radius: 5px; background-color: #f4d35e; color: #000; cursor: pointer; }
+    .contact button:hover { background-color: #fff; }
+    .social { margin-top: 30px; }
+    .social a { color: #f4d35e; text-decoration: none; font-size: 1.2em; }
+    .social a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#bio">Biography</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/wOO4GqllCRA?autoplay=1&mute=1&loop=1&playlist=wOO4GqllCRA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="overlay">
+      <h1>Leonel Gonzalez Visual Artist</h1>
+    </div>
+  </header>
+
+  <section class="bio-section" id="bio">
+    <div class="bio-img">
+      <img src="leo.jpg" alt="Leonel Gonzalez">
+    </div>
+    <div class="bio-text">
+      <p>Leonel Gonzalez is a Venezuelan visual artist whose hyperrealist works are known for technical precision and emotional depth. His passion for horses and landscapes is reflected in every brushstroke, forging a powerful visual connection between the viewer and subject. He has participated in national and international exhibitions and is celebrated for his mastery of detail and composition. His work is a constant exploration of beauty, movement, and strength.</p>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="gallery1.jpg" alt="Artwork 1">
+      <img src="gallery2.jpg" alt="Artwork 2">
+      <img src="gallery3.jpg" alt="Artwork 3">
+      <img src="gallery4.jpg" alt="Artwork 4">
+      <img src="gallery5.jpg" alt="Artwork 5">
+      <img src="gallery6.jpg" alt="Artwork 6">
+      <img src="gallery7.jpg" alt="Artwork 7">
+      <img src="Gallery8.jpg" alt="Artwork 8">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <form action="#">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div class="social">
+      <p>Follow me on Instagram: <a href="https://www.instagram.com/leonelgonzalez_art/" target="_blank">@leonelgonzalez_art</a></p>
+    </div>
+  </section>
+</body>
+</html>
