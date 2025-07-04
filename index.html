@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leonel Gonzalez | Art Portfolio</title>
+  <style>
+    body { margin: 0; font-family: 'Helvetica Neue', sans-serif; color: #333; background: #fff; }
+    nav { position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); padding: 1rem; display: flex; justify-content: center; z-index: 10; box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+    nav ul { list-style: none; display: flex; gap: 2rem; margin: 0; padding: 0; }
+    nav a { text-decoration: none; color: #333; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+
+    .hero { position: relative; height: 100vh; background: url('hero-art.jpg') center/cover no-repeat; }
+    .overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.4); }
+    .hero-content { position: relative; z-index: 1; color: white; text-align: center; top: 50%; transform: translateY(-50%); }
+    .hero-content h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    .hero-content p { font-size: 1.5rem; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2rem; padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+    .two-col img { width: 100%; border-radius: 8px; }
+
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: 1.5rem; padding: 2rem; max-width: 1200px; margin: auto; }
+    .gallery-grid img { width: 100%; border-radius: 8px; }
+
+    footer { padding: 2rem; background: #111; color: #eee; text-align: center; }
+    .footer-content a { margin: 0 1rem; color: #eee; text-decoration: none; }
+    .footer-content a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Leonel Gonzalez</h1>
+      <p>Hyperrealism in Acrylic</p>
+    </div>
+  </header>
+
+  <section id="about" class="two-col">
+    <div>
+      <h2>About the Artist</h2>
+      <p>Leonel Gonzalez is a Venezuelan visual artist born in Caracas on November 23, 1988. From an early age, he showed a natural curiosity for drawing and painting, first through crayons and pencils, and later—at age 12—with brushes and acrylics under the mentorship of artist and teacher Arturo Mujica at the Jacobo Borges Museum.</p>
+      <p>While other children practiced with watercolor crayons, Leonel pushed beyond expectations, requesting to join the adult painting class. Mujica, known for his high standards and attention to detail, recognized Leonel’s potential and agreed. That bold step marked the beginning of Leo’s journey, earning him early recognition in his community as “the horse painter.”</p>
+      <p>Though adolescence temporarily pulled him away from art, life would lead him back. While working in a marquetry shop, Leonel rediscovered his connection to the materials and process. What began as a job became a turning point. Immersed once again in texture and craft, he chose to dedicate himself fully to painting—leaving behind all else.</p>
+      <p>Self-taught and sharpened through mentorships with artists and critics, Leonel developed a technical, emotionally driven practice centered in acrylics. His ability to portray depth and motion with precision has captured the attention of many—especially in his signature depictions of horses, a subject he often returns to.</p>
+      <p>Over the years, Leonel has painted works that reached the hands of Venezuelan sports legends such as Oswaldo Guillén, Omar Vizquel, Miguel Cabrera, and Victor Davalillo—some of whom have autographed the pieces for charitable causes.</p>
+      <p>Today, his work can be found at Sepia Gallery, where he continues to evolve as an artist to watch.</p>
+      <blockquote>“Sometimes I explore other subjects—it’s a way to test myself or indulge a creative impulse. But I always return to what’s mine... horses.”<br>– Leonel Gonzalez</blockquote>
+    </div>
+    <div>
+      <img src="leo-portrait.jpg" alt="Leonel Gonzalez Portrait" />
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-grid">
+    <img src="artwork1.jpg" alt="Artwork 1" />
+    <img src="artwork2.jpg" alt="Artwork 2" />
+    <img src="artwork3.jpg" alt="Artwork 3" />
+    <img src="artwork4.jpg" alt="Artwork 4" />
+  </section>
+
+  <footer id="contact">
+    <div class="footer-content">
+      <a href="mailto:leogonzalez.art@gmail.com">Contact</a>
+      <a href="https://instagram.com/leonelgonzalez_art" target="_blank">Instagram</a>
+    </div>
+    <p>&copy; 2025 Leonel Gonzalez. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
