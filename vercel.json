@@ -1,9 +1,0 @@
-{
-  "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/video.mp4",
-      "destination": "/video.mp4"
-    }
-  ]
-}
