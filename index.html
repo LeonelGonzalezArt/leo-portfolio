@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leonel González - Artista Plástico</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+      color: #fff;
+      background: #000;
+    }
+    .video-background {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .video-background iframe {
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    header img {
+      max-height: 100px;
+    }
+    .bio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.7);
+      position: relative;
+      z-index: 1;
+    }
+    .bio img {
+      max-width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+    .bio div {
+      flex: 1;
+      min-width: 280px;
+      max-width: 700px;
+    }
+    .bio p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-background">
+    <iframe src="https://www.youtube.com/embed/wOO4GqllCRA?autoplay=1&mute=1&controls=0&loop=1&playlist=wOO4GqllCRA&modestbranding=1&showinfo=0&rel=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </div>
+
+  <header>
+    <img src="logo.png" alt="Leonel González Logo" />
+  </header>
+
+  <section class="bio">
+    <img src="leo.jpg" alt="Leonel González Painting" />
+    <div>
+      <p>Born in Caracas on November 23, 1988. From a young age, he always showed interest in pencils and crayons that allowed him to draw and paint, but it was at the age of 12 that he first came into contact with brushes and acrylics with the help of the visual artist and teacher Arturo Mujica, at the Jacobo Borges Museum.</p>
+      <p>There, Leonel was in class with other children his age, replicating still lifes with watercolor crayons, but he wanted to go further… and boldly asked the teacher to paint on canvas in the adult class. Given Mujica's skill and pursuit of perfection, he agreed, and that was the beginning of the story of the "horse painter," as he began to be known in his community.</p>
+      <p>The homework of adolescence partially distanced him from art until, as an adult, he began working in a marquetry shop. Once again, he was exposed to the artist's own materials and contact with them. Unintentionally, he reconnected with his passion. He learned and absorbed, and it was at that moment that González decided to devote himself completely to painting, leaving marquetry and other crafts behind. He began a process of study and research, also mingling with artists and critics with whom he...
+      <p>Throughout his career, artist Leonel González has used acrylic as the sole medium to convey his artistic vision.</p>
+      <p>Followers like the big leaguers: Oswaldo Guillen, Omar Vizquel, Miguel Cabrera and Victor Davalillo , whom I portray for charity purposes after they signed the work.</p>
+      <p>Most of his works can be seen at the Sepia Gallery. This artist is a must-see… he has a long way to go and is sure to amaze us with his work.</p>
+      <p><em>“Sometimes I escape and do other things, it's a way to test my skills and indulge a certain whim, but then I return to my thing... Horses.”</em></p>
+    </div>
+  </section>
+</body>
+</html>
