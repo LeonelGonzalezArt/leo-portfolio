@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonel González – Artista Plástico</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, html {
+      font-family: 'Lato', sans-serif;
+      background-color: #fff;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .hero-text {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    }
+    .hero-text h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+    }
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5em;
+    }
+    .hero-text a {
+      text-decoration: none;
+      background-color: rgba(255,255,255,0.9);
+      color: #222;
+      padding: 0.75em 1.5em;
+      border-radius: 2em;
+      font-weight: bold;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Playfair Display', serif;
+      z-index: 10;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2em;
+    }
+    nav ul li a {
+      color: #222;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 4em 2em;
+    }
+    .bio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .bio img {
+      border-radius: 50%;
+      max-width: 200px;
+      margin-bottom: 1.5em;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5em;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      display: block;
+      border-radius: 1em;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.02);
+    }
+    footer {
+      background-color: #f4f0eb;
+      color: #444;
+      text-align: center;
+      padding: 2em 1em;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div>Leonel González</div>
+    <ul>
+      <li><a href="#bio">Biografía</a></li>
+      <li><a href="#gallery">Galería</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="background.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+    <div class="hero-text">
+      <h1>Leonel González – Artista Plástico</h1>
+      <p>Obra inspirada en la naturaleza, el simbolismo y la figura humana</p>
+      <a href="#gallery">Explora la Obra</a>
+    </div>
+  </header>
+
+  <section id="bio" class="bio">
+    <img src="bio.jpg" alt="Leonel González">
+    <p>Nacido en Caracas el 23 de noviembre de 1988. Desde pequeño mostró interés por los lápices y crayones que le permitían dibujar y pintar, pero fue a los 12 años que tuvo contacto por primera vez con los pinceles y acrílicos con la ayuda del artista plástico y maestro Arturo Mujica, en el Museo Jacobo Borges... [continuar biografía completa aquí]</p>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <img src="gallery1.jpg" alt="Obra 1">
+    <img src="gallery2.jpg" alt="Obra 2">
+    <img src="gallery3.jpg" alt="Obra 3">
+    <img src="gallery4.jpg" alt="Obra 4">
+    <img src="gallery5.jpg" alt="Obra 5">
+    <img src="gallery6.jpg" alt="Obra 6">
+  </section>
+
+  <footer id="contact">
+    <p>Contacto: leonelgonzalezart@gmail.com</p>
+    <p><a href="https://www.instagram.com/leonelgonzalez_art/" target="_blank">Instagram: @leonelgonzalez_art</a></p>
+    <p>&copy; 2025 Leonel González</p>
+  </footer>
+</body>
+</html>
