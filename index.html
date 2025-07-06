@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Leonel González - Artista Plástico</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { height: 100%; font-family: Arial, sans-serif; }
+        .video-background {
+            position: fixed;
+            top: 0; left: 0;
+            min-width: 100%; min-height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .container {
+            padding: 2rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .bio {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .bio img {
+            max-width: 300px;
+            margin-right: 2rem;
+            border-radius: 10px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .gallery img {
+            width: calc(33% - 1rem);
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(0,0,0,0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/wOO4GqllCRA?autoplay=1&mute=1&loop=1&playlist=wOO4GqllCRA"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+    </div>
+    <nav>Leonel González - Artista Plástico</nav>
+    <div class="container">
+        <div class="bio">
+            <img src="leo.jpg" alt="Leonel González Portrait">
+            <div>
+                <p>Born in Caracas on November 23, 1988. From a young age, he always showed interest in pencils and crayons that allowed him to draw and paint, but it was at the age of 12 that he first came into contact with brushes and acrylics with the help of the visual artist and teacher Arturo Mujica, at the Jacobo Borges Museum.</p>
+                <p>There, Leonel was in class with other children his age, replicating still lifes with watercolor crayons, but he wanted to go further… and boldly asked the teacher to paint on canvas in the adult class. Given Mujica's skill and pursuit of perfection, he agreed, and that was the beginning of the story of the "horse painter," as he began to be known in his community.</p>
+                <p>The homework of adolescence partially distanced him from art until, as an adult, he began working in a marquetry shop. Once again, he was exposed to the artist's own materials and contact with them. Unintentionally, he reconnected with his passion. He learned and absorbed, and it was at that moment that González decided to devote himself completely to painting, leaving marquetry and other crafts behind. He began a process of study and research, also mingling with artists and critics with whom he further refined his technique.</p>
+                <p>Throughout his career, artist Leonel González has used acrylic as the sole medium to convey his artistic vision. Followers like the big leaguers: Oswaldo Guillen, Omar Vizquel, Miguel Cabrera and Victor Davalillo , whom I portray for charity purposes after they signed the work. Most of his works can be seen at the Sepia Gallery. This artist is a must-see… he has a long way to go and is sure to amaze us with his work.</p>
+                <p>“Sometimes I escape and do other things, it's a way to test my skills and indulge a certain whim, but then I return to my thing... Horses.”</p>
+            </div>
+        </div>
+        <div class="gallery">
+            <img src="gallery1.jpg" alt="Gallery Image 1">
+            <img src="gallery2.jpg" alt="Gallery Image 2">
+            <img src="gallery3.jpg" alt="Gallery Image 3">
+            <img src="gallery4.jpg" alt="Gallery Image 4">
+            <img src="gallery5.jpg" alt="Gallery Image 5">
+            <img src="gallery6.jpg" alt="Gallery Image 6">
+        </div>
+    </div>
+    <footer>© 2025 Leonel González. All rights reserved.</footer>
+</body>
+</html>
