@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leonel González - Artista Plástico</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      color: white;
+      background: black;
+      overflow-x: hidden;
+    }
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      z-index: -1;
+    }
+    .video-background iframe {
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav img {
+      height: 40px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .bio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .bio img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .bio-text {
+      max-width: 700px;
+    }
+    .gallery {
+      margin-top: 4rem;
+    }
+    .gallery-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .gallery-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .gallery-images img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .gallery-images img:hover {
+      transform: scale(1.05);
+    }
+    #lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 10000;
+    }
+    #lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-background">
+    <iframe src="https://www.youtube.com/embed/wOO4GqllCRA?autoplay=1&mute=1&loop=1&playlist=wOO4GqllCRA"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+    </iframe>
+  </div>
+
+  <nav>
+    <img src="logo.png" alt="Logo" />
+    <ul>
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="https://www.instagram.com/leonelgonzalez_art/" target="_blank">Instagram</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section class="bio" id="bio">
+      <img src="leo.jpg" alt="Leonel González">
+      <div class="bio-text">
+        <p>Born in Caracas on November 23, 1988. From a young age, he always showed interest in pencils and crayons that allowed him to draw and paint, but it was at the age of 12 that he first came into contact with brushes and acrylics with the help of the visual artist and teacher Arturo Mujica, at the Jacobo Borges Museum.</p>
+        <p>There, Leonel was in class with other children his age, replicating still lifes with watercolor crayons, but he wanted to go further… and boldly asked the teacher to paint on canvas in the adult class. Given Mujica's skill and pursuit of perfection, he agreed, and that was the beginning of the story of the "horse painter," as he began to be known in his community.</p>
+        <p>The homework of adolescence partially distanced him from art until, as an adult, he began working in a marquetry shop. Once again, he was exposed to the artist's own materials and contact with them. Unintentionally, he reconnected with his passion. He learned and absorbed, and it was at that moment that González decided to devote himself completely to painting, leaving marquetry and other crafts behind. He began a process of study and research, also mingling with artists and critics with whom he further refined his technique.</p>
+        <p>Throughout his career, artist Leonel González has used acrylic as the sole medium to convey his artistic vision. Followers like the big leaguers: Oswaldo Guillen, Omar Vizquel, Miguel Cabrera and Victor Davalillo, whom I portray for charity purposes after they signed the work. Most of his works can be seen at the Sepia Gallery. This artist is a must-see… he has a long way to go and is sure to amaze us with his work.</p>
+        <p>“Sometimes I escape and do other things, it's a way to test my skills and indulge a certain whim, but then I return to my thing... Horses.”</p>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="gallery-title">Gallery</div>
+      <div class="gallery-images">
+        <img src="gallery1.jpg" onclick="openLightbox(this.src)" />
+        <img src="gallery2.jpg" onclick="openLightbox(this.src)" />
+        <img src="gallery3.jpg" onclick="openLightbox(this.src)" />
+        <img src="gallery4.jpg" onclick="openLightbox(this.src)" />
+        <img src="gallery5.jpg" onclick="openLightbox(this.src)" />
+        <img src="gallery6.jpg" onclick="openLightbox(this.src)" />
+      </div>
+    </section>
+  </div>
+
+  <div id="lightbox" onclick="this.style.display='none'">
+    <img src="" alt="Zoomed Artwork">
+  </div>
+
+  <footer>
+    © 2025 Leonel González. All rights reserved.
+  </footer>
+
+  <script>
+    function openLightbox(src) {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'flex';
+      lightbox.querySelector('img').src = src;
+    }
+  </script>
+</body>
+</html>
